@@ -1,18 +1,40 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>Space Invaders</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+  <title>Space Invaders</title>
 </head>
 <body>
   <img class="title" src="./title.svg" alt="">
   <h2 class="results">0</h2>
-  <div class="grid"></div>
+  
+  <div class="grid-container">
+    <div class="menu">
+    <h1>Controls:</h1>
+    <h2><i class="fas fa-arrow-left"></i> &nbsp;Move left</h2>
+    <h2><i class="fas fa-arrow-right"></i> &nbsp;Move right</h2>
+    <h2><i class="fas fa-arrow-up"></i> &nbsp;Shoot</h2>
+    <button class="startBtn" onclick="startGame()">Start Game</button>
+    </div>
+    <button class="nextLevelBtn" onclick="nextLevel()">Next Level</button>
+    <div class="grid"></div>
+  </div>
+  
   
   <script src="app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
